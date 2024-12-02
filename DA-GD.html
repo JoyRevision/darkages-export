@@ -97,7 +97,7 @@ body {
 
 		<script src="DA-GD.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"DA-GD","experimentalVK":false,"fileSizes":{"DA-GD.pck":1038896,"DA-GD.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"DA-GD","experimentalVK":false,"fileSizes":{"DA-GD.pck":1087680,"DA-GD.wasm":43016933},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -105,11 +105,6 @@ const engine = new Engine(GODOT_CONFIG);
 	const statusOverlay = document.getElementById('status');
 	const statusProgress = document.getElementById('status-progress');
 	const statusNotice = document.getElementById('status-notice');
-
-	const canvas = document.getElementById('canvas');
-	canvas.addEventListener('click', async() => {
-		await canvas.requestPointerLock();
-	});
 
 	let initializing = true;
 	let statusMode = '';
